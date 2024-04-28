@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Deepwoken.png">
+  <link rel="stylesheet" href="styl.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
+  <title>Noobwoken</title>
+</head>
+<body>
+  <header class="pop-up">
+    <a href="Noobwoken.html"><img src="noobwoken-logo.png"></a>
+    <p><a href="https://deepwoken.fandom.com/wiki/Deepwoken_Wiki">Deepwoken Wiki</a></p>
+  </header>
+  <section class="lewy">
+    <header>
+      Home
+    </header>
+    <center><img src="Noobwoken-logo.png" class="nb"></center>
+    <div class="naglowek"><b>Welcome to the Deepwoken tutorial</b></div>
+    <hr>
+    <nav>
+      <section class="inf">
+        The purpose of this site is to help people 
+        <br>
+        starting their adventure with Deepwoken to understand some of the game mechanics
+        <br> 
+        and also to gain some knowleage beforehand on game's enemies and locations
+      </section>
+    </nav>
+    <aside>
+      <button class="btn"><a href="https://www.roblox.com/games/4111023553/Deepwoken"></a><img src="Roblox.png"></img>Play</button><br>
+      <button class="btn"><a href="https://discord.com/invite/deepwoken-wiki-768105926351650866"></a><img src="Discord.png">Join</button><br>
+      <button class="btn"><a href="https://twitter.com/Deepwoken"></a><img src="x.png" height="20px" width="20px">Twitter</button>
+    </aside>
+    <section class="tutorial">
+      <div class="header">
+        Start of the Game
+      </div>
+      <div class="ttr">
+        <button class="btn" onclick="Etris()">Etris</button>
+        <button class="btn" onclick="Isle()">Isle of Vigils</button>
+      </div>
+      <p><video controls src="" width="80%" id="video"></video></p>
+    </section>
+  </section>
+    <section class="prawy">
+        <header>Disclamer</header>
+        <p class="disclamer"><b>Note:</b><i> This page is just a school project and most of copyrights belong to <a href="https://deepwoken.fandom.com/wiki/Deepwoken_Wiki">Deepwoken Wiki </a></i></p>
+    </section>
+    <section class="prawy"> 
+      <header>New Monsters</header>
+      <p class="Monsters">
+      <a href="Mudskipper_Brute.html"><img src="Closeup_Brute.png"></a>
+      <a href="Mudskipper_Brute.html" style="text-decoration:none;">Mudskipper Brute</a>
+    </p>
+      <hr>
+      <p class="Monsters">
+        <a href="Mudskipper_Broodlord.html"><img src="Mudbroodlord.png"></a>
+        <a href="Mudskipper_Broodlord.html" style="text-decoration:none;">Mudskipper Broodlord</a>
+      </p>  
+    </section>
+    <footer>
+      Made by: Michał Kubiś
+    </footer>
+      
+      <script>
+      window.addEventListener("scroll", function() {
+  if (window.pageYOffset >= 200) {
+    document.querySelectorAll(".pop-up").forEach(function(element) {
+      element.style.top = "0";
+    });
+  } else {
+    document.querySelectorAll(".pop-up").forEach(function(element) {
+      element.style.top = "-46px";
+    });
+  }
+});
+        function Etris()
+        {
+            document.getElementById("video").src = "Etris.mp4"
+        }
+        function Isle()
+        {
+            document.getElementById("video").src = "Isle.mp4"
+        }
+      </script>
+      
+</body>
+</html>
