@@ -206,7 +206,7 @@ button img
 {
     text-align: center;
     margin-top: 10%;
-    height: 600px;
+    height: 500px;
 }
 .tutorial .header
 {
@@ -227,5 +227,5 @@ iframe
     border-width: 2px;
     border-style: solid;
     width: 70%;
-    height: 354px;
+    height: 300px;
 }
