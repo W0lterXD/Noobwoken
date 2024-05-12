@@ -59,7 +59,7 @@ body
 .nb 
 {
     height: 100%;
-    width: auto;
+    width: 60%;
 }
 .disclamer, .disclamer a
 {
@@ -113,6 +113,11 @@ section
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+}
+.Monsters img
+{
+    height: 100%;
+    width: 100%;
 }
 .Monsters a
 {
@@ -201,7 +206,8 @@ button img
 {
     text-align: center;
     margin-top: 10%;
-    height: 110%;
+    height: 700px;
+    width: 100%;
 }
 .tutorial .header
 {
@@ -215,10 +221,12 @@ button img
     align-items: center ;
     justify-content: space-around;
 }
-video
+iframe
 {
     border: white;
     border-radius: 20px;
     border-width: 2px;
     border-style: solid;
+    width: 80%;
+    height: 354px;
 }
