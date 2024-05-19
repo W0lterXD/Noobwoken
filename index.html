@@ -29,12 +29,12 @@
         <br>
         starting their adventure with Deepwoken to understand some of the game mechanics
         <br> 
-        and also to gain some knowleage beforehand on game's enemies and locations
+        and also to gain some knowledge beforehand on game's enemies and locations
       </section>
     </nav>
     <aside>
       <a href="https://www.roblox.com/games/4111023553/Deepwoken" target="_blank"><button class="btn"><img src="Roblox.png"></img>Play</button></a><br>
-      <a href="https://discord.com/invite/deepwoken-wiki-768105926351650866" target="_blank"><button class="btn"><img src="Discord.png">Join</button></a><br>
+      <a href="https://discord.com/invite/deepwoken" target="_blank"><button class="btn"><img src="Discord.png">Join</button></a><br>
       <a href="https://twitter.com/Deepwoken" target="_blank"><button class="btn"><img src="X.png">Twitter</button></a>
     </aside>
     <section class="tutorial">
@@ -47,7 +47,37 @@
       </div>
       <p><iframe id="video" src="https://drive.google.com/file/d/19NvT2OAGpv3wiqWqqkhgVlqgxOMVLLyj/preview" loading="lazy" allow="autoplay" allowfullscreen></iframe></p>
     </section>
+    <p class="header">Early Game Enemies</p>
+    <div class="Etrean_Luminant" style="border-bottom: 1px solid white;">
+      <a class="Etrean" data-div="1" style="color: #04a7a7; text-decoration: underline;">Etris</a>
+      <a class="Etrean" data-div="2">Vigils</a>
+      <a class="Etrean" data-div="3">Erisia</a>
+      <a class="Etrean" data-div="4">Minityrsa</a>
+    </div>
+    <div class="divy">
+      <div class="div div1">
+        <div class="dif">
+          <a href="Nomad.html"><img src="Nomad.png"></a>
+          <a href="Nomad.html">Eastern Tribe Nomad
+            <!-- ☆ ★ -->
+          </a>
+      </div>
+      </div>
+
+      <div class="div div2">
+        Vigils' enemies aren't included here yet
+      </div>
+  
+      <div class="div div3">
+        Erisia's enemies aren't included here yet
+      </div>
+  
+      <div class="div div4">
+        Minityrsa's enemies aren't included here yet
+      </div>
+    </div>
   </section>
+  
     <section class="prawy">
         <header>Disclamer</header>
         <p class="disclamer"><b>Note:</b><i> This page is just a school project and most of copyrights belong to <a href="https://deepwoken.fandom.com/wiki/Deepwoken_Wiki">Deepwoken Wiki </a></i></p>
@@ -56,12 +86,12 @@
       <header>New Monsters</header>
       <p class="Monsters">
       <a href="Mudskipper_Brute.html"><img src="Closeup_Brute.png"></a>
-      <a href="Mudskipper_Brute.html" style="text-decoration:none;">Mudskipper Brute</a>
+      <a href="Mudskipper_Brute.html">Mudskipper Brute</a>
     </p>
       <hr>
       <p class="Monsters">
         <a href="Mudskipper_Broodlord.html"><img src="Mudbroodlord.png"></a>
-        <a href="Mudskipper_Broodlord.html" style="text-decoration:none;">Mudskipper Broodlord</a>
+        <a href="Mudskipper_Broodlord.html">Mudskipper Broodlord</a>
       </p>  
     </section>
   </div>
@@ -89,6 +119,37 @@
         {
             document.getElementById("video").src = "https://drive.google.com/file/d/1uZRLWD0m-pIgqr-Qh9qRz_Z5vYAHrwcR/preview"
         }
+
+        const Etrean_Luminant = document.querySelectorAll(".Etrean");
+
+        Etrean_Luminant.forEach(Etrean => {
+          Etrean.addEventListener("click", () => {
+    const div = document.querySelector(`.div${Etrean.dataset.div}`);
+
+    // Ukryj wszystkie divy
+    const divy = document.querySelectorAll(".div");
+    divy.forEach(div => {
+      div.style.display = "none";
+    });
+
+    // Wyświetl kliknięty div
+    div.style.display = "block";
+  });
+});
+var links = document.querySelectorAll("a.Etrean");
+    for (var i = 1; i < links.length; i++) {
+      links[i].style.textDecoration = "none";
+    }
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", function() {
+        for (var j = 0; j < links.length; j++) {
+          links[j].style.textDecoration = "none";
+          links[j].style.color = "#a9a9a9"
+        }
+        this.style.textDecoration = "underline";
+        this.style.color = "#04a7a7";
+      });
+    }
       </script>
       
 </body>
