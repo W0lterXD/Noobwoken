@@ -4,21 +4,160 @@
   <meta charset="UTF-8">
   <link rel="icon" href="Deepwoken.png">
   <link rel="stylesheet" href="styl.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
   <title>Noobwoken</title>
 </head>
 <body>
-      <a href="index.html" style="text-decoration:none;"><center>Page under development</center></a>
+  <header class="pop-up">
+    <a href="index.html"><img src="noobwoken-logo.png"></a>
+    <p><a href="https://deepwoken.fandom.com/wiki/Deepwoken_Wiki">Deepwoken Wiki</a></p>
+  </header>
+  <div class="body">
+      <section>
+        <p class="header">Nomad Tribe</p>
+        <hr>
+        <div class="main">
+        <div class="l">
+          <p><h2 style="border-bottom: 1px solid gray;">Description</h2></p>
+          <p>
+            An Eastern Tribe Nomad is an enemy NPC that can be found at the Nomad Camp in Etris
+             or fighting alongside with an Eastern Nomad Leader against two Ministry Scouts on Summer Isle during events.
+          </p>
+          <p>
+            They wear a Rebel's Bandana and the Navaen Nomad Robes. All of them are also Gremors with their gender varying.
+          </p>
+          <br>
+          <p><h2 style="border-bottom: 1px solid gray;">Moveset</h2></p>
+          <p>Their arsenal consists of a Gremorian Longspear</p>
+          <table class="moves">
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Parryable?</th>
+              <th>Blockable?</th>
+              <th>Danger</th>
+            </tr>
+            <tr>
+              <td>Assault</td>
+              <td>Firmly thrusts spear at opponent and finishing the combo by kicking them.</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Critical</td>
+              <td>Throws spear at opponent and then pulling them in with a white chain.</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div class="p">
+          <div style="background-color: #2d695e; font-weight: bold; padding: 1%; width: 78%;"><center>Eastern Tribe Nomad</center></div>
+          <img src="Nomad.png" width="80%">
+          <table class="Nomad">
+            <tr>
+              <th>Health</th>
+              <td><ul style="list-style-type:none;"><li>200</li></ul></td>
+            </tr>
+            <tr>
+              <th>Drops</th>
+              <td>
+                <ul>
+                  <li>Frigid Prism</li>
+                  <li>Gremorian Longspear</li>
+                  <li>Rebel's Bandana</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>Weapon</th>
+              <td>
+                <ul>
+                  <li>Gremorian Longspear</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>Moves</th>
+              <td>
+                <ul>
+                  <li>Assault</li>
+                  <li>Critical</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      </section>
+      </div>
+      <footer>
+        Made by: Michał Kubiś
+      </footer>
 
       <style>
-        a
+        table
         {
-            color: #1d6956;
-            font-size: 100px;
-            position: absolute;
-            top: 42.7%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+          width: 80%;
+          border-collapse: collapse;
+        }
+        tr
+        {
+          border: 1px solid #2a6356;
+        }
+        .body
+        {
+          padding-top: 5%;
+          padding: 10%;
+        }
+        .main
+        {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: flex-start;
+          align-content: flex-start;
+        }
+        .l
+        {
+          width: 60%;
+          margin: 2%;
+        }
+        .p
+        {
+          width: 30%;
+          display: inline-flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          align-items: stretch;
+          align-content: flex-start;
+        }
+        .header
+        {
+          font-family: "Fondamento", cursive;
+          text-align: center;
+          justify-items: center;
+          font-size: xx-large;
         }
       </style>
+      <script>
+        window.addEventListener("scroll", function() {
+  if (window.pageYOffset >= 200) {
+    document.querySelectorAll(".pop-up").forEach(function(element) {
+      element.style.top = "0";
+    });
+  } else {
+    document.querySelectorAll(".pop-up").forEach(function(element) {
+      element.style.top = "-46px";
+    });
+  }
+});
+      </script>
 </body>
 </html>
